@@ -1,0 +1,22 @@
+<div style="text-align: center;">
+<h1>
+  
+  Fetch data from API
+
+</h1>
+</div>
+
+<button (click)="fetchPeople()">Fecth people</button>
+<button (click)="fetchage()">Fecth age</button>
+้<hr/>
+
+<ul>
+<div>
+<li *ngFor="let person of people$ | async">{{person.name}}</li>
+<li *ngFor="let person of people$ | async">{{person.sex}}</li>
+<li *ngFor="let person of age | async">{{person.data}}</li>
+
+</div>
+
+
+
